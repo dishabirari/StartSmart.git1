@@ -1,30 +1,37 @@
+<!-- Banner -->
 
-🚀 StartSmart – Student Startup Toolkit
-StartSmart is your all-in-one toolkit to help student founders bring their startup ideas to life.
-Plan smarter, raise funds, and manage your journey — from idea to launch!
 
-✨ What’s Inside?
-💡 Idea Hub – Submit your business ideas (keep them private or showcase publicly).
+<h1 align="center">🚀 StartSmart – Student Startup Toolkit</h1>
 
-📊 Equity Simulator – Plan co-founder splits, investors, and ESOP shares easily.
+<p align="center">
+  <i>Your all-in-one toolkit to help student founders <b>plan, fund, and grow</b> their startup ideas.</i>
+</p>
 
-⏱ Smart Task + Time Tracker – Track your KPIs and stay on schedule.
+---
 
-💼 Fundraising Tools – Manage virtual & real-world pitch decks and investors.
 
-🤖 AI Advisor – Get grant suggestions, financial advice, and funding tips.
+## ✨ Features
 
-💸 Mini Crowdfunding Platform – Like Ketto, but for student startups & education causes.
+- 💡 **Idea Hub** – Submit & showcase your startup ideas (Private or Public).
+- 📊 **Equity Simulator** – Plan co-founder, investor, and ESOP splits.
+- ⏱ **Task + Time Tracker** – Stay on schedule with KPI metrics.
+- 💼 **Fundraising Tools** – Track **pitches** (virtual + real-world).
+- 🤖 **AI Advisor** – Get **funding suggestions, grants & financial insights**.
+- 💸 **Crowdfunding Platform** – Like **Ketto**, but for **students & education projects**.
 
-👥 Team Workflow
-Fork this repo
+---
 
-Clone your fork locally
+## 🛠 How to Contribute
 
-Set upstream to the main repo
+1. **Fork** this repo  
+2. **Clone** your fork locally  
+3. Set **upstream** to the main repo  
+4. Work on a **feature branch**  
+5. **Push** changes & submit a **Pull Request** 🚀
 
-Work on your branch
 
-Submit a pull request 🚀
 
-👨‍💻 Group 3 – Mini Project (Semester V)
+## 👥 Team Info
+Group 3 – Mini Project (Semester V)
+
+Built by students, for students. 🎓
