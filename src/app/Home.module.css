@@ -1,0 +1,234 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: white;
+  overflow: hidden;
+}
+
+/* Base styles for elements, using percentages relative to the original 1280x832 design */
+.educationFieldTitle,
+.branchTitle,
+.inputLine,
+.branchOption,
+.civilEngineering,
+.electricalEngineering,
+.computerScience,
+.mechanicalEngineering,
+.circleIcon {
+  position: absolute;
+  font-family: 'Inter', sans-serif;
+  word-wrap: break-word;
+}
+
+.educationFieldTitle {
+  width: calc(777 / 1280 * 100vw);
+  height: calc(75 / 832 * 100vh);
+  left: calc(107 / 1280 * 100vw);
+  top: calc(172 / 832 * 100vh);
+  color: #444343;
+  font-size: clamp(24px, 3.125vw, 40px); /* Responsive font size */
+  font-weight: 400;
+}
+
+.branchTitle {
+  width: calc(599 / 1280 * 100vw);
+  height: calc(88 / 832 * 100vh);
+  left: calc(105 / 1280 * 100vw);
+  top: calc(244 / 832 * 100vh);
+  color: #E2E2E2;
+  font-size: clamp(36px, 5vw, 64px); /* Responsive font size */
+  font-weight: 400;
+}
+
+.inputLine {
+  width: calc(1022 / 1280 * 100vw);
+  height: 0;
+  left: calc(111 / 1280 * 100vw);
+  top: calc(327 / 832 * 100vh);
+  border: 1px #DCDCDC solid;
+}
+
+.branchOption {
+  color: #7A7A7A;
+  font-size: clamp(20px, 2.8vw, 36px); /* Responsive font size */
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 5px 10px;
+}
+
+.branchOption:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.civilEngineering {
+  width: calc(308 / 1280 * 100vw);
+  height: calc(47 / 832 * 100vh);
+  left: calc(109 / 1280 * 100vw);
+  top: calc(375 / 832 * 100vh);
+}
+
+.electricalEngineering {
+  width: calc(419 / 1280 * 100vw);
+  height: calc(96 / 832 * 100vh);
+  left: calc(108 / 1280 * 100vw);
+  top: calc(430 / 832 * 100vh);
+}
+
+.computerScience {
+  width: calc(650 / 1280 * 100vw);
+  height: calc(48 / 832 * 100vh);
+  left: calc(109 / 1280 * 100vw);
+  top: calc(485 / 832 * 100vh);
+}
+
+.mechanicalEngineering {
+  width: calc(439 / 1280 * 100vw);
+  height: calc(48 / 832 * 100vh);
+  left: calc(108 / 1280 * 100vw);
+  top: calc(540 / 832 * 100vh);
+}
+
+.circleIcon {
+  left: calc(1070 / 1280 * 100vw);
+  top: calc(268 / 832 * 100vh);
+  width: calc(40 / 1280 * 100vw);
+  height: calc(40 / 832 * 100vh);
+}
+
+.circleIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.selected {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.selectedBranchDisplay {
+  position: absolute;
+  top: calc(750 / 832 * 100vh); /* Position it below the options, adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(20px, 3vw, 36px);
+  color: #444343;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.projectSummaryText {
+  position: absolute;
+  width: 80%; /* Make the container responsive */
+  max-width: 783px; /* Original width */
+  height: auto; /* Adjust height automatically */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #444343;
+  font-size: clamp(36px, 5vw, 64px);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  overflow: hidden;
+  border-right: 0.01em solid #444343; /* Smaller cursor */
+  letter-spacing: 0.05em;
+  white-space: nowrap; /* Single line */
+  display: inline-block; /* Changed to inline-block */
+  animation: 
+    typing 8s linear forwards, /* Smoother animation */
+    blink-caret .75s step-end infinite;
+   animation-fill-mode: forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #444343; }
+}
+
+/* Media queries for smaller screens to adjust layout */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5vh;
+  }
+
+  .educationFieldTitle,
+  .branchTitle,
+  .inputLine,
+  .civilEngineering,
+  .electricalEngineering,
+  .computerScience,
+  .mechanicalEngineering,
+  .circleIcon {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: none;
+    height: auto;
+    text-align: center;
+    font-size: clamp(20px, 4vw, 40px);
+  }
+
+  .educationFieldTitle {
+    margin-top: 5vh;
+  }
+
+  .branchTitle {
+    margin-top: 3vh;
+  }
+
+  .inputLine {
+    margin-top: 2vh;
+  }
+
+  .branchOption {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .civilEngineering,
+  .electricalEngineering,
+  .computerScience,
+  .mechanicalEngineering {
+    margin-top: 1vh;
+  }
+
+  .circleIcon {
+    margin-top: 3vh;
+    width: 40px;
+    height: 40px;
+  }
+
+  .selectedBranchDisplay {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-top: 3vh;
+  }
+}
